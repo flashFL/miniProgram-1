@@ -1,2 +1,2 @@
 <!--pages/video/video.wxml-->
-<text>pages/video/video.wxml</text>
+<tab-control titles="{{['推荐', 'MV']}}"/>

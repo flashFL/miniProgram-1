@@ -1,1 +1,10 @@
 /* pages/video/video.wxss */
+button{
+  background-color: white;
+}
+button::after{
+  border-color: white;
+}
+.selected{
+  background-color: #36ab60;
+}

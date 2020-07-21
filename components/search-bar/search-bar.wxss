@@ -1,0 +1,13 @@
+.container {
+  background-color: white;
+ height: 60rpx;
+ border-radius: 60rpx;
+ margin: 20rpx 40rpx;
+ color: grey;
+ font-size: 30rpx;
+}
+.text {
+  font-size: 30rpx;
+  line-height: 60rpx;
+  margin-left: 30rpx;
+}

@@ -35,7 +35,6 @@ App({
   },
   // 定义全局数据
   globalData: {
-    name: "sff",
-    age: 18
+    color: "#31C27C"
   }
 })

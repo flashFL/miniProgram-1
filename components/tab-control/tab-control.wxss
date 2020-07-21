@@ -1,0 +1,24 @@
+.tab-control {
+  height: 60rpx;
+  display: flex;
+  margin: 20rpx 40rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+.tab-item {
+  flex: 0.15;
+  color: grey;
+  text-align: center;
+}
+.active {
+  color: black;
+  font-size: 40rpx;
+}
+.active .bottom-line {
+  height: 15rpx;
+  width: 84rpx;
+  margin-left: 10rpx;
+  background-color: #31C27C;
+  border-radius: 15rpx 15rpx 5rpx 5rpx;
+  margin-top: -25rpx;
+}

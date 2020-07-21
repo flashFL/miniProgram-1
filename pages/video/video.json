@@ -1,7 +1,9 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "tab-control": "/components/tab-control/tab-control"
+  },
   "enablePullDownRefresh": true,
-  "backgroundColor": "#ffffff",
+  "backgroundColor": "whitesmoke",
   "backgroundTextStyle": "dark"
 
 }
