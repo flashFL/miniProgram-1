@@ -1,0 +1,35 @@
+.rec-title {
+  display: flex;
+  margin: 20rpx 40rpx;
+  justify-content: space-between;
+}
+.more {
+  color: grey;
+  font-size: 30rpx;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.rec-content {
+  margin: 20rpx 40rpx;
+}
+.song-list {
+  display: flex;
+  margin: 20rpx auto;
+}
+.song-img {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+.song-msg{
+  margin-left: 40rpx;
+}
+.song-name {
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+.song-album {
+  color: grey;
+  font-size: 24rpx;
+}

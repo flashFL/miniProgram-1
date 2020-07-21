@@ -125,3 +125,33 @@ target和currentTarget的区别
    <view data-index="{{index}}" data-item="{{item}}">{{item}}</view>
 </block>
 获取：event.currentTarget.dataset.index/item
+
+19.事件捕获和事件冒泡
+捕获：<view capture-bind:tap="test1">
+冒泡：<view bind:tap="test2">
+bind会一层层传递，catch会阻止事件的进一步传递
+
+20.promise最大的好处就是防止回调地狱，找时间学习promise
+
+21.开启flex布局的容器内不再区分块级元素和行内元素
+应用给flex容器的属性：
+*items排布方向--flex-direction:
+row(默认值，主轴方向为行，从左到右)/row-reverse/column(主轴方向为列，从上到下)/column-reverse
+
+*items在主轴上对齐方式--justify-content:
+flex-start(默认值，左对齐)/flex-end(右对齐)/center(居中对齐)/space-between(靠左靠右对齐)/space-evenly(平分)/space-around(左右边缘间隙小，中间间隙大)
+
+*items在交叉轴上的对齐方式--align-items:
+
+*items换行显示--flex-wrap:
+nowrap(默认值不换行，压缩items宽度一行显示)/wrap(换行)/wrap-reverse(沿交叉轴反转)
+
+*多行items在在交叉轴上对齐方式--align-content
+
+应用给items的属性：
+*order决定item的排布顺序，可以是任意整数，值越小的排在前面，默认0
+*align-self单独给item设置对齐方式
+*flex-grow设置item在容器有剩余情况下的扩展，任意非负数字，值越大扩展越大,默认值0
+*flex-shrink设置items在超过容器宽高的时候收缩以填满容器，默认值1
+
+22.scroll-view实现局部滚动

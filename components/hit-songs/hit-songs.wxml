@@ -1,0 +1,13 @@
+<scroll-view scroll-x enable-flex>
+  <view class="hit-songs">
+    <view wx:for="{{hit}}" wx:key="index" class="hit-songs-item">
+      <image src="{{item.src}}" class="hit-img">
+        <view class="hit-times">
+          <image src="/assets/play.png" class="hit-play"/>
+          {{item.times}}
+      </view>
+      </image>
+      <view class="hit-slogan">{{item.slogan}}</view>
+    </view>
+  </view>
+</scroll-view>

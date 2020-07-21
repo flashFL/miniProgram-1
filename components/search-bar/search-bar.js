@@ -19,10 +19,12 @@ Component({
 
   methods: {
     searchBarTouch(event){
-      var offsetLeft = event.currentTarget.offsetLeft;
-      var offsetTop = event.currentTarget.offsetTop;
-      console.log(event, offsetLeft, offsetTop)
-      console.log("手指触摸")
+      // var offsetLeft = event.currentTarget.offsetLeft;
+      // var offsetTop = event.currentTarget.offsetTop;
+      // console.log(event, offsetLeft, offsetTop)
+      wx.navigateTo({
+        url: '/pages/search/search',
+      })
     }
   }
 

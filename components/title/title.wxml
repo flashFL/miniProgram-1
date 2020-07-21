@@ -1,0 +1,4 @@
+<view class="rec-title">
+  <text>{{title}}</text>
+  <view class="more" bindtap="toMore">{{more}}</view>
+</view>

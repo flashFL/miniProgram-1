@@ -24,9 +24,13 @@ Page({
       url: 'url',
       // es6中的箭头函数中的this一层层往上找，如果使用es5语法，即function(){},this指向为undefined
       success: (res) => {
+        console.log(res)
         this.setData({
           list: res
         })
+      },
+      error: function(res){
+        console.log(res)
       }
     })
   },
@@ -77,6 +81,8 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return{
+      title: "QQ音乐 让生活充满音乐"
+    }
   }
 })

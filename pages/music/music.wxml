@@ -1,2 +1,12 @@
 <!--pages/music/music.wxml-->
 <search-bar />
+<title title="歌曲推荐" more="更多 >"/>
+<song-rec/>
+<title title="热门歌单" more="更多 >"/>
+<hit-songs/>
+<title title="推荐小程序"/>
+<image src="/assets/other.png" class="other-program"/>
+<title title="官方歌单" more="更多 >"/>
+<hit-songs/>
+<title title="巅峰榜"/>
+

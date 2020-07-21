@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/music/music",
-    "pages/video/video"
+    "pages/video/video",
+    "pages/search/search",
+    "pages/more/more"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

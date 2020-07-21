@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "search-bar": "/components/search-bar/search-bar"
+    "search-bar": "/components/search-bar/search-bar",
+    "song-rec": "/components/song-recommendation/song-rec",
+    "title": "/components/title/title",
+    "hit-songs": "/components/hit-songs/hit-songs"
   }
 }

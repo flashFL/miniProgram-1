@@ -1,4 +1,4 @@
-// pages/video/video.js
+// pages/more/more.js
 Page({
 
   /**
@@ -54,15 +54,13 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    console.log("下拉刷新！")
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return{
-      title: "QQ音乐 让生活充满音乐"
-    }
+
   }
 })
