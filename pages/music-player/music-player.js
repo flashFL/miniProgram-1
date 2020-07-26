@@ -32,7 +32,6 @@ Page({
       success: (res) => {
         var lyric = res.data.lyric;
         this.parseLyric(lyric);
-        console.log(this.data.lyrics, this.data.times)
       }
     })
   },
@@ -112,8 +111,15 @@ Page({
     array.forEach(element => {
       //歌词解析
       var lyric = element.split("]");
-      if (lyric.length === 1) return true
-      lyrics.push(lyric[1])
+      if (lyric.length !== 2){
+        return
+      } else{
+        if (lyric[1] !== ""){
+          lyrics.push(lyric[1])
+        } else {
+          return
+        }
+        }
 
       // [00:44.68]时间解析
       var timeReg = /\[((\d*):(\d*\.\d*))\]/
@@ -139,7 +145,7 @@ Page({
           var updistance = this.data.updistance;
           this.setData({
             currentIndex: index,
-            updistance: (updistance - 60)
+            updistance: (updistance - 30)
           })
           break
         }

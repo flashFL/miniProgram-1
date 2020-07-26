@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    y:0
   },
 
   /**
@@ -26,7 +26,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    setInterval(()=>{
+      this.setData({
+        y: (this.data.y-60)
+      })
+    },1000)
   },
 
   /**

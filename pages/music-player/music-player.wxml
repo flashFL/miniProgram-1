@@ -7,12 +7,12 @@
   </image>
   <!-- audio -->
   <audio src="{{song.src}}" 
- action="{{action}}" bindtimeupdate="play"></audio>
+ action="{{action}}" bindtimeupdate="play" loop></audio>
   <!-- lyric -->
   <view class="lyricBox">
-    <view class="lyric" style="transform: translateY({{updistance}}rpx)">
+    <view  style="transform: translateY({{updistance}}px)">
       <block wx:for="{{lyrics}}" wx:key="index">
-        <view class="{{currentIndex == index ? 'active' : ''}}">{{item}}</view>
+        <view class="lyric {{currentIndex == index ? 'active' : ''}}">{{item}}</view>
       </block>
     </view>
   </view>

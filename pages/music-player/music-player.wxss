@@ -24,12 +24,11 @@
 .lyricBox{
   height: 180rpx;
   overflow: hidden;
-  font-size: 30rpx;
-  line-height: 60rpx;
+  font-size: 12px;
   opacity: 0.5;
 }
-.lyric{
-  /* height: 60rpx; */
+.lyric {
+  height: 30px;
 }
 .active {
   color: #31C27C;

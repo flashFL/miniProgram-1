@@ -1,4 +1,6 @@
 <!--pages/test/test.wxml-->
-<view class="box box1"></view>
-<view class="box box2"></view>
-<view class="box box3"></view>
+<view style="transform: translateY({{y}}rpx);">
+<block wx:for="{{10}}">
+  <view class="box">{{item}}</view>
+</block>
+</view>
