@@ -8,3 +8,8 @@ button::after{
 .selected{
   background-color: #36ab60;
 }
+.card {
+  margin: 20rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+}

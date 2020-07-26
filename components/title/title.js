@@ -5,7 +5,8 @@ Component({
   },
   properties: {
     title: String,
-    more: String
+    more: String,
+    color: String
   }
   
 })

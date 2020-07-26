@@ -1,2 +1,18 @@
 <!--pages/video/video.wxml-->
 <tab-control titles="{{['推荐', 'MV']}}"/>
+<block wx:for="{{card}}" wx:key="index">
+  <song-card-mini card="{{item}}"/>
+</block>
+<block wx:for="{{card}}" wx:key="index">
+  <song-card-mini card="{{item}}"/>
+</block>
+<block wx:for="{{card}}" wx:key="index">
+  <song-card-mini card="{{item}}"/>
+</block>
+<block wx:for="{{card}}" wx:key="index">
+  <song-card-mini card="{{item}}"/>
+</block>
+<block wx:for="{{card}}" wx:key="index">
+  <song-card-mini card="{{item}}"/>
+</block>
+

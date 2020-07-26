@@ -1,0 +1,8 @@
+<!--components/songsList/songsList.wxml-->
+<view class="container">
+  <view class="item">
+    <image src="{{src}}" class="img">
+    </image>
+    <view class="slogan">{{slogan}}</view>
+  </view>
+</view>

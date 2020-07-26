@@ -2,6 +2,16 @@
 page {
   background-color: whitesmoke;
 }
+.search {
+  background-color: white;
+  height: 60rpx;
+  border-radius: 30rpx;
+  font-size: 30rpx;
+  color: grey;
+  margin: 20rpx 40rpx;
+  line-height: 60rpx;
+  padding-left: 40rpx;
+}
 .other-program {
   height: 100rpx;
   width: 100rpx;

@@ -1,9 +1,6 @@
 {
   "usingComponents": {
-    "tab-control": "/components/tab-control/tab-control"
-  },
-  "enablePullDownRefresh": true,
-  "backgroundColor": "whitesmoke",
-  "backgroundTextStyle": "dark"
-
+    "tab-control": "/components/tab-control/tab-control",
+    "song-card-mini": "/components/song-card-mini/song-card-mini"
+  }
 }

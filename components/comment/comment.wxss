@@ -1,0 +1,47 @@
+/* components/comment/comment.wxss */
+.comment {
+  margin: 20rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 24rpx;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20rpx;
+}
+.right-top {
+  display: flex;
+  justify-content: space-between;
+}
+.times {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+.usertag {
+  background-color: orange;
+  border-radius: 10rpx;
+}
+.zan {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+}
+.rec {
+  background-color: orange;
+  border-radius: 10rpx;
+  display: inline-block;
+}
+.right-bottom {
+  margin-top: 20rpx;
+}
+.comment-text {
+  line-height: 40rpx;
+}

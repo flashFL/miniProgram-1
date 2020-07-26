@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"enhance": false,
 		"postcss": true,
@@ -76,6 +76,21 @@
 					"id": -1,
 					"name": "video",
 					"pathName": "pages/video/video",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "music-player",
+					"pathName": "pages/music-player/music-player",
+					"query": "",
 					"scene": null
 				}
 			]

@@ -30,13 +30,20 @@ Component({
       "album": "少年",
       "src": "https://y.gtimg.cn/music/photo_new/T002R800x800M000000EI9tu27e5iy.jpg?max_age=2592000"
     },
-  ]
+  ],
+  },
+  properties: {
+    color: {
+      type: String,
+      value: "black"
+    },
+    src: String,
+    name: String,
+    singer: String,
+    album: String,
+    dot: String
   },
   methods: {
-    toMore: function(){
-      wx.navigateTo({
-        url: '/pages/more/more',
-      })
-    }
+   
   }
 })

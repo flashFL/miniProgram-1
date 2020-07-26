@@ -1,18 +1,23 @@
 // pages/search/search.js
+var tags = require('../../data/tags')
 Page({
 
   /**
    * 页面的初始数据
+   * hidden: 0 不隐藏; 1 隐藏;
    */
   data: {
-
+    tags: tags.dataList,
+    deleteHidden: 0,
+    bottomHidden: 1
   },
+  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options.index)
   },
 
   /**
@@ -26,7 +31,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**
@@ -62,5 +67,17 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  focus(){
+    this.setData({
+      bottomHidden: 1,
+      deleteHidden: 0
+    })
+  },
+  blur(){
+    this.setData({
+      bottomHidden: 0,
+      deleteHidden: 1,
+    })
   }
 })

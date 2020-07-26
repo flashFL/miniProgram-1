@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "title": "/components/title/title",
+    "song-rec": "/components/song-recommendation/song-rec",
+    "hit-songs": "/components/hit-songs/hit-songs",
+    "comment": "/components/comment/comment",
+    "singer": "/components/singer/singer",
+    "songsList-card": "/components/songsList-card/songsList-card"
+  },
+  "navigationBarTitleText": ""
+  
+
+}

@@ -1,0 +1,10 @@
+<!--components/album/album.wxml-->
+<view class="singer-card">
+  <view class="container">
+    <image src="/assets/test.jpg" class="singer-img"/>
+    <view class="singer-msg">
+      <view class="singer">{{singer}}</view>
+    </view>
+    <view class="more">></view>
+  </view>
+</view>

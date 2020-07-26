@@ -1,3 +1,9 @@
-<view class="container" bind:tap="searchBarTouch">
- <view class="text">搜索</view>
+<view class="container">
+  <view class="container-left">
+    <image class="search-img" src="/assets/search.png"/>
+    <input placeholder="{{placeholder}}" placeholder-class="input-placeholder" 
+    bindfocus="focus" bindblur="blur"
+    focus/>
+  </view>
+  <image src="/assets/delete.png" hidden="{{hidden}}" class="delete"/>
 </view>

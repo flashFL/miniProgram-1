@@ -1,0 +1,19 @@
+<view class="top">
+  <view class="top-left">
+    <view class="title">{{title}}</view>
+    <block wx:for="{{top}}" wx:key="index">
+      <view wx:if="{{index < 3}}">
+        <text class="name">{{index + 1}}.{{item.name}} - </text>
+        <text class="singer">{{item.singer}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="top-right">
+    <image src="{{top[0].src}}" class="top-img">
+      <view class="top-times">
+        <image src="/assets/play.png" class="top-play"/>
+        {{times}}
+      </view>
+    </image>
+  </view>
+</view>

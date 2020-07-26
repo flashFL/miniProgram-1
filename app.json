@@ -3,7 +3,8 @@
     "pages/music/music",
     "pages/video/video",
     "pages/search/search",
-    "pages/more/more"
+    "pages/more/more",
+    "pages/music-player/music-player"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -14,7 +15,7 @@
     "enablePullDownRefresh": false
   },
   "tabBar": {
-    "color": "bfbfbf",
+    "color": "#bfbfbf",
     "selectedColor": "#31c27c",
     "borderStyle": "white",
     "position": "bottom",

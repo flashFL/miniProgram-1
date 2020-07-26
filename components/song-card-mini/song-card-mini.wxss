@@ -1,0 +1,38 @@
+.card {
+  display: inline-block;
+  width: 300rpx;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  margin-bottom: 20rpx;
+}
+.card-img{
+  margin-bottom: 5rpx;
+}
+.img{
+  height: 200rpx;
+  width: 300rpx;
+  position: relative;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+.position-item {
+  width: 280rpx;
+  position: absolute;
+  left: 0;
+  bottom: 10rpx;
+  padding-left: 10rpx;
+}
+.card-msg{
+  height: 30rpx;
+  font-size: 24rpx;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  width: 24rpx;
+  height: 24rpx;
+}
+.slogan {
+  font-size: 24rpx;
+}

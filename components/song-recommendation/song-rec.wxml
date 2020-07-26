@@ -1,10 +1,10 @@
-<view class="rec-content">
-  <view wx:for="{{song}}" wx:key="index" class="song-list">
-    <image src="{{item.src}}" class="song-img"/>
+<view class="rec-content" bindtap="more">
+  <view class="song-list" style="color:{{color}}">
+    <image src="{{src}}" class="song-img"/>
     <view class="song-msg">
-      <view class="song-name">{{item.name}}</view>
-      <view class="song-album">{{item.singer}} · {{item.album}}</view>
+      <view class="song-name">{{name}}</view>
+      <view class="song-album" style="opacity:0.5">{{singer}} {{dot}} {{album}}</view>
     </view>
-    <view class="more">></view>
+    <view class="more" style="opacity:0.5">></view>
   </view>
 </view>

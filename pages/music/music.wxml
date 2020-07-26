@@ -1,12 +1,20 @@
 <!--pages/music/music.wxml-->
-<search-bar />
+<view bind:tap="toSearchPage" class="search">搜索</view>
 <title title="歌曲推荐" more="更多 >"/>
-<song-rec/>
+<block wx:for="{{songs}}" wx:key="index">
+  <song-rec src="{{item.poster}}" name="{{item.name}}" singer="{{item.singer}}" dot="·" album="{{item.album}}" bindtap="songDetail" data-index="{{index}}" data-id="{{item.id}}"/>
+</block>
 <title title="热门歌单" more="更多 >"/>
-<hit-songs/>
+<hit-songs hit="{{hit}}"/>
 <title title="推荐小程序"/>
 <image src="/assets/other.png" class="other-program"/>
 <title title="官方歌单" more="更多 >"/>
-<hit-songs/>
+<hit-songs hit="{{official}}"/>
 <title title="巅峰榜"/>
+<top title="飙升榜" times="1940万" top="{{topUp}}"/>
+<top title="热歌榜" times="1950万" top="{{topHit}}"/>
+<top title="新歌榜" times="81.4万" top="{{topNew}}"/>
+
+
+
 

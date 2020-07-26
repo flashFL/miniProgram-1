@@ -1,0 +1,9 @@
+<view class="card">
+  <view class="container">
+    <image src="{{src}}" class="img"/>
+    <view class="msg">
+      <view class="singer">{{singer}}{{album}}</view>
+    </view>
+    <view class="more">></view>
+  </view>
+</view>

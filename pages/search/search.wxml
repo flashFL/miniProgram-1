@@ -1,2 +1,23 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="container">
+  <view class="container-left">
+    <image class="search-img" src="/assets/search.png"/>
+    <input placeholder="搜索  音乐/视频/歌手/歌单" placeholder-class="input-placeholder" 
+    bindfocus="focus" bindblur="blur"
+    focus/>
+  </view>
+  <image src="/assets/delete.png" class="delete" hidden="{{deleteHidden}}"/>
+</view>
+<view class="page-bottom" hidden="{{bottomHidden}}">
+  <title title="热门搜索"/>
+  <view class="tags">
+  <block class="tags" wx:for="{{tags}}" wx:key="index">
+    <block wx:if="{{index !== 0}}">
+        <tag tag="{{item}}" color=""/>
+    </block>
+    <block wx:if="{{index === 0}}">
+      <tag tag="{{item}}" color="#31C27C"/>
+    </block>
+  </block>
+  </view>
+</view>

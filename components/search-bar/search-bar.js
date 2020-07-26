@@ -14,16 +14,22 @@ Component({
    * 页面的初始数据
    */
   data: {
-    
+    // 0:显示; 1:隐藏
+    hidden: 1
+  },
+  properties: {
+    placeholder: String,
   },
 
   methods: {
-    searchBarTouch(event){
-      // var offsetLeft = event.currentTarget.offsetLeft;
-      // var offsetTop = event.currentTarget.offsetTop;
-      // console.log(event, offsetLeft, offsetTop)
-      wx.navigateTo({
-        url: '/pages/search/search',
+    focus(){
+      this.setData({
+        hidden: 0
+      })
+    },
+    blur(){
+      this.setData({
+        hidden: 1
       })
     }
   }

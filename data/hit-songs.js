@@ -1,4 +1,4 @@
-var hit=[
+var json=[
   {
   "src": "https://qpic.y.qq.com/music_cover/1kWwWk1H6NGhnwAia4ge8nFicdg4aWEn8rUSQKW8fmpEZGquR0hOE9Kw/300?n=1",
   "slogan": "经典情歌，唱出男人最深沉的爱",
@@ -33,5 +33,5 @@ var hit=[
 
 // 定义数据出口
 module.exports = {
-  dataList: hit
+  dataList: json
 }

@@ -1,0 +1,2 @@
+<!--components/tag/tag.wxml-->
+<view class="tag" style="color:{{color}}">{{tag}}</view>

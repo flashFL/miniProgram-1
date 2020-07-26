@@ -3,7 +3,11 @@
 const app = getApp()
 // console.log(app.globalData.name)
 // console.log(app.globalData.age)
-
+var hit = require('../../data/hit-songs')
+var official = require('../../data/official-songs')
+var topHit = require('../../data/top-hit')
+var topUp = require('../../data/top-up')
+var topNew = require('../../data/top-new')
 // 注册页面示例
 // 每个页面也有初始化数据、生命周期函数、事件监听
 Page({
@@ -11,7 +15,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: []
+    hit: hit.dataList,
+    official: official.dataList,
+    topHit: topHit.dataList,
+    topUp: topUp.dataList,
+    topNew: topNew.dataList,
+    songs: app.globalData.songs,
   },
 
   /**
@@ -46,7 +55,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**
@@ -84,5 +93,17 @@ Page({
     return{
       title: "QQ音乐 让生活充满音乐"
     }
-  }
+  },
+  toSearchPage(){
+    wx.navigateTo({
+      url: '/pages/search/search',
+    })
+  },
+  songDetail(event){
+    var index = event.currentTarget.dataset.index
+    var id = event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: '/pages/music-player/music-player?index=' + index + '&id=' + id,
+    })
+  },
 })

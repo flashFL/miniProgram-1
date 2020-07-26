@@ -1,0 +1,21 @@
+/* components/songsList/songsList.wxss */
+.container {
+  margin: 0 40rpx;
+  display: inline-block;
+}
+.item{
+  margin-right: -60rpx;
+}
+.img{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+}
+.slogan {
+  width: 200rpx;
+  font-size: 24rpx;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

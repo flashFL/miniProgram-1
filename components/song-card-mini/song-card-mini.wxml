@@ -1,0 +1,16 @@
+<view class="card">
+  <view class="card-img">
+    <image src="{{card.src}}" class="img">
+    <view class="position-item">
+        <view class="card-msg">
+          <view class="times">
+            <image class="icon" src="/assets/play-video.png"/>
+            {{card.times}}
+          </view>
+          <view class="time">{{card.time}}</view>
+        </view>
+      </view>
+    </image>
+  </view>
+  <view class="slogan">{{card.slogan}}</view>
+</view>

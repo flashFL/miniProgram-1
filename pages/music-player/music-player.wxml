@@ -1,0 +1,41 @@
+<!--pages/music-player/music-player.wxml-->
+<view class="player">
+  <view class="song">{{song.name}}</view>
+  <view class="singer">{{song.singer}}</view>
+  <image class="poster" src="{{song.poster}}">
+    <image class="play-control" src="{{src}}" bindtap="handletoggle" data-src="{{src}}"/>
+  </image>
+  <view class="lyric">
+    <block wx:for="{{lyrics}}" wx:key="index">
+      <view>{{item}}</view>
+    </block>
+  </view>
+  <view class="other-control">
+    <image src="/assets/download.png" class="download"></image>
+    <image src="/assets/collect.png" class="collect"></image>
+  </view>
+  <button class="share">分享给微信好友</button>
+</view>
+<title title="猜你喜欢听" color="white"/>
+<block wx:for="{{song.similar}}" wx:key="index">
+  <song-rec src="{{item.poster}}" name="{{item.name}}" singer="{{item.singer}}" color="white"/>
+</block>
+<title title="大家都在听" color="white"/>
+<block wx:for="{{hit}}" wx:key="index">
+  <block wx:if="{{index < 3}}">
+    <songsList-card src="{{item.src}}" slogan="{{item.slogan}}"/>
+  </block>
+</block>
+<title title="歌手与专辑" color="white"/>
+<singer singer="歌手  {{song.singer}}" src="{{song.singerImg}}"/>
+<singer album="专辑  {{song.album}}" src="{{song.poster}}"/>
+<title title="精彩评论" color="white"/>
+<comment/>
+<view class="more-comment">查看更多热门评论></view>
+<view class="mask-bg">
+  <image src="{{song.poster}}" class="mask-img"></image>
+</view>
+<view class="mask"></view>
+
+
+

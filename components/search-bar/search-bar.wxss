@@ -1,13 +1,25 @@
-.container {
+.container{
+  height: 60rpx;
   background-color: white;
- height: 60rpx;
- border-radius: 60rpx;
- margin: 20rpx 40rpx;
- color: grey;
+  margin: 20rpx 40rpx;
+ border-radius: 30rpx;
  font-size: 30rpx;
+ color: grey;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 20rpx;
 }
-.text {
-  font-size: 30rpx;
-  line-height: 60rpx;
-  margin-left: 30rpx;
+.container-left {
+  display: flex;
+  align-items: center;
+}
+.search-img{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.delete {
+  width: 30rpx;
+  height: 30rpx;
 }

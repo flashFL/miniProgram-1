@@ -35,6 +35,7 @@ App({
   },
   // 定义全局数据
   globalData: {
-    color: "#31C27C"
+    color: "#31C27C",
+    songs: require('./data/songs').dataList
   }
 })

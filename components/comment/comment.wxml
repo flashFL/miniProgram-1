@@ -1,0 +1,26 @@
+<!--components/comment/comment.wxml-->
+<view class="comment">
+  <view class="left">
+    <image src="/assets/test.jpg" class="avatar"/>
+  </view>
+  <view class="right">
+    <view class="right-top">
+      <view class="user">
+        <view class="username">祝你早安午安晚安
+          <text class="usertag">评论达人</text>
+        </view>
+        <view class="comment-time" style="opacity:0.5">07-10 17:19</view>
+      </view>
+      <view class="times">
+        <text class="times-num" style="opacity:0.5">7778</text>
+        <image class="zan" src="/assets/zan.png"/>
+      </view>
+    </view>
+    <view class="right-bottom">
+      <view class="comment-detail">
+        <text class="rec">荐</text>
+        <text class="comment-text">{{commentText}}</text>
+      </view>
+    </view>
+  </view>
+</view>

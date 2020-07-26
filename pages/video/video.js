@@ -1,11 +1,12 @@
 // pages/video/video.js
+var card = require('../../data/card')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    card: card.dataList
   },
 
   /**
