@@ -3,12 +3,18 @@
   <view class="song">{{song.name}}</view>
   <view class="singer">{{song.singer}}</view>
   <image class="poster" src="{{song.poster}}">
-    <image class="play-control" src="{{src}}" bindtap="handletoggle" data-src="{{src}}"/>
+    <image class="play-control" src="{{src}}" bindtap="playOrPause"/>
   </image>
-  <view class="lyric">
-    <block wx:for="{{lyrics}}" wx:key="index">
-      <view>{{item}}</view>
-    </block>
+  <!-- audio -->
+  <audio src="{{song.src}}" 
+ action="{{action}}" bindtimeupdate="play"></audio>
+  <!-- lyric -->
+  <view class="lyricBox">
+    <view class="lyric" style="transform: translateY({{updistance}}rpx)">
+      <block wx:for="{{lyrics}}" wx:key="index">
+        <view class="{{currentIndex == index ? 'active' : ''}}">{{item}}</view>
+      </block>
+    </view>
   </view>
   <view class="other-control">
     <image src="/assets/download.png" class="download"></image>
@@ -36,6 +42,8 @@
   <image src="{{song.poster}}" class="mask-img"></image>
 </view>
 <view class="mask"></view>
+
+
 
 
 

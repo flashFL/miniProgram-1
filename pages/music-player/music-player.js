@@ -7,11 +7,17 @@ Page({
    * 页面的初始数据
    */
   data: {
+    action: {
+      method: "play"
+    },
+    status: "play",
     song: [],
     hit: hit.dataList,
     src: "/assets/playMusic.png",
     times: [],
-    lyrics: []
+    lyrics: [],
+    currentIndex: 0,
+    updistance: 0
   },
 
   /**
@@ -26,6 +32,7 @@ Page({
       success: (res) => {
         var lyric = res.data.lyric;
         this.parseLyric(lyric);
+        console.log(this.data.lyrics, this.data.times)
       }
     })
   },
@@ -41,6 +48,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+
   },
 
   /**
@@ -77,14 +85,25 @@ Page({
   onShareAppMessage: function () {
 
   },
-  handletoggle(event){
-    console.log(event.currentTarget.dataset)
-    var src = event.currentTarget.dataset;
-    if (src="/assets/playMusic.png"){
+  playOrPause(event){
+    const status = this.data.status;
+    if (status == "play"){
       this.setData({
+        action: {
+          method: "pause"
+        },
+        status: "pause",
         src: "/assets/stop.png"
       })
-    };
+    } else {
+      this.setData({
+        action: {
+          method: "play"
+        },
+        status: "play",
+        src: "/assets/playMusic.png"
+      })
+    }
   },
   parseLyric(lyric){
     var array = lyric.split("\n");
@@ -93,7 +112,7 @@ Page({
     array.forEach(element => {
       //歌词解析
       var lyric = element.split("]");
-      if (lyric.length == 1) return true
+      if (lyric.length === 1) return true
       lyrics.push(lyric[1])
 
       // [00:44.68]时间解析
@@ -109,5 +128,23 @@ Page({
       lyrics: lyrics,
       times: times
     })
+  },
+
+  play(e){
+    const currentTime = parseFloat((e.detail.currentTime).toFixed(2));
+    const times = this.data.times;
+    for (let index = this.data.currentIndex; index < times.length; index++) {
+      if (currentTime >= times[index]){
+        if (this.data.currentIndex !== index){
+          var updistance = this.data.updistance;
+          this.setData({
+            currentIndex: index,
+            updistance: (updistance - 60)
+          })
+          break
+        }
+      }
+    }
   }
+
 })

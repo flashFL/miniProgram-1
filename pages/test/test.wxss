@@ -1,0 +1,6 @@
+/* pages/test/test.wxss */
+.box{
+  height: 30rpx;
+  background-color: violet;
+  border-bottom: 2rpx solid red;
+}

@@ -1,0 +1,4 @@
+<!--pages/test/test.wxml-->
+<view class="box box1"></view>
+<view class="box box2"></view>
+<view class="box box3"></view>

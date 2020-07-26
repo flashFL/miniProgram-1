@@ -21,12 +21,18 @@
   margin: 40rpx 0;
   position: relative;
 }
-.lyric {
-  font-size: 30rpx;
-  line-height: 60rpx;
+.lyricBox{
   height: 180rpx;
   overflow: hidden;
+  font-size: 30rpx;
+  line-height: 60rpx;
   opacity: 0.5;
+}
+.lyric{
+  /* height: 60rpx; */
+}
+.active {
+  color: #31C27C;
 }
 .play-control {
   position: absolute;

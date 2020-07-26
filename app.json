@@ -4,7 +4,8 @@
     "pages/video/video",
     "pages/search/search",
     "pages/more/more",
-    "pages/music-player/music-player"
+    "pages/music-player/music-player",
+    "pages/test/test"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

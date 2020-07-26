@@ -92,6 +92,13 @@
 					"pathName": "pages/music-player/music-player",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

@@ -1,11 +1,12 @@
 var data = [
   {
-    "id": "864647494",
+    "id": "1456286877",
     "name": "爱, 存在",
     "singer": "王靖然不胖",
     "album": "爱, 存在",
     "poster": "https://y.gtimg.cn/music/photo_new/T002R800x800M000001gconQ395bKn.jpg?max_age=2592000",
     "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M000002EAAXG3QpAUO.jpg?max_age=2592000",
+    "src": 'https://ws.stream.qqmusic.qq.com/C400001WS7Jz0i6hrH.m4a?guid=1851725062&vkey=E3DAC5BB7A98F48786F352EB651AE63E99842CC94B7D1B8060558354B125C25461673B18E0DB36997F04FD8088573A820666C22F238124B9&uin=0&fromtag=66',
     "similar":[{
       "name": "脆弱星球",
       "singer": "王薇oneWay",
@@ -30,6 +31,7 @@ var data = [
     "album": "没有发生的爱情",
     "poster": "https://y.gtimg.cn/music/photo_new/T002R800x800M000002lMPc30c4rOO.jpg?max_age=2592000",
     "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M00000067r4p0wBDDN.jpg?max_age=2592000",
+    "src":"https://isure.stream.qqmusic.qq.com/C400002z2pz700xhKy.m4a?guid=1851725062&vkey=877E710FA3E8E59B0E42B4FE07EC22DCEE44796CC5F052F656A264707842ACC570E3B15EA43826DEB7FF9F085C633D8C71A5410F30BA6167&uin=1758&fromtag=66",
     "similar": [
       {
         "name": "过活",
@@ -55,6 +57,7 @@ var data = [
     "album": "飞鸟和蝉",
     "poster": "https://y.gtimg.cn/music/photo_new/T002R800x800M000004C9Kg7275J7H.jpg?max_age=2592000",
     "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M00000067r4p0wBDDN.jpg?max_age=2592000",
+    "src":"https://isure.stream.qqmusic.qq.com/C400004Fimy419PpsA.m4a?guid=1851725062&vkey=7051E866601146CF177E5E60D1BC9DFC5C58106546E8DD3CA5CB2C1A1B9D46E775F761A8A8B2802423303FFCA92301CE862F590654F9E6FE&uin=1758&fromtag=66",
     "similar": [
       {
         "name": "一步之遥",
@@ -81,6 +84,7 @@ var data = [
     "album": "微微",
     "poster": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003Lr7ct0vUSj3.jpg?max_age=2592000",
     "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M0000014X2tu05PYbH.jpg?max_age=2592000",
+    "src": "https://isure.stream.qqmusic.qq.com/C400000pe8GD0He2Fe.m4a?guid=1851725062&vkey=E6946DDE6EB1171F8ED0AA39F58FCB4B5E56023D2318449A355B90B50E46E537F9BC950239008967566915A27209B683EA15047921D45E07&uin=1758&fromtag=66",
     "similar": [
       {
         "name": "夏天的风",
@@ -106,6 +110,7 @@ var data = [
     "album": "少年",
     "poster": "https://y.gtimg.cn/music/photo_new/T002R800x800M000000EI9tu27e5iy.jpg?max_age=2592000",
     "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M000004dr7ZS36C2B1.jpg?max_age=2592000",
+    "src": "https://isure.stream.qqmusic.qq.com/C400000S7TGL43hhBO.m4a?guid=1851725062&vkey=57931682138D580ADB2A570A3AF5F529BC5A8EA07929F9F4A6AFA7CD986C05A619257EEE35DA63AB352B12E0E6290F163FFFE23E90C8C717&uin=1758&fromtag=66",
     "similar": [
       {
         "name": "世界这么大还是遇见你",
