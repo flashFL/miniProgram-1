@@ -1,12 +1,17 @@
 // pages/video/video.js
-var card = require('../../data/card')
+var rec = require('../../data/card')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    card: card.dataList
+    video:[
+      rec.dataList,
+      []
+    ],
+    currentIndex: 0,
+    titles: ['推荐', 'MV']
   },
 
   /**
@@ -65,5 +70,12 @@ Page({
     return{
       title: "QQ音乐 让生活充满音乐"
     }
+  },
+  handleTabClick(event){
+    const index = event.detail.index;
+    this.setData({
+      currentIndex: index
+    })
+
   }
 })

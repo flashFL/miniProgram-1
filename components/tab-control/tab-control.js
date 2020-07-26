@@ -10,10 +10,12 @@ Component({
   },
   methods: {
     handleActive(event){
-      const index = event.currentTarget.dataset.index
+      const index = event.currentTarget.dataset.index;
       this.setData({
         currentIndex: index
-      })
+      });
+      const data = {index: this.data.currentIndex};
+      this.triggerEvent("tabclick", data, {})
     }
   }
 })
