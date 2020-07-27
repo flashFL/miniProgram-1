@@ -1,5 +1,5 @@
 <!--components/musicList/musicList.wxml-->
-<view class="container">
+<view class="container" bindtap="jumpToPlayer" data-data="{{list}}">
   <view class="left">{{number}}</view>
   <view class="right">
     <view class="right-top">{{list.name}}</view>

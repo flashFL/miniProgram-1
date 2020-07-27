@@ -7,6 +7,7 @@ var data = [
     "poster": "https://y.gtimg.cn/music/photo_new/T002R800x800M000001gconQ395bKn.jpg?max_age=2592000",
     "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M000002EAAXG3QpAUO.jpg?max_age=2592000",
     "src": 'https://ws.stream.qqmusic.qq.com/C400001WS7Jz0i6hrH.m4a?guid=1851725062&vkey=E3DAC5BB7A98F48786F352EB651AE63E99842CC94B7D1B8060558354B125C25461673B18E0DB36997F04FD8088573A820666C22F238124B9&uin=0&fromtag=66',
+    "tag":{SQ:"SQ"},
     "similar":[{
       "name": "脆弱星球",
       "singer": "王薇oneWay",
@@ -32,6 +33,7 @@ var data = [
     "poster": "https://y.gtimg.cn/music/photo_new/T002R800x800M000002lMPc30c4rOO.jpg?max_age=2592000",
     "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M00000067r4p0wBDDN.jpg?max_age=2592000",
     "src":"https://isure.stream.qqmusic.qq.com/C400002z2pz700xhKy.m4a?guid=1851725062&vkey=877E710FA3E8E59B0E42B4FE07EC22DCEE44796CC5F052F656A264707842ACC570E3B15EA43826DEB7FF9F085C633D8C71A5410F30BA6167&uin=1758&fromtag=66",
+    "tag":{SQ:"SQ",only:"独家"},
     "similar": [
       {
         "name": "过活",
@@ -58,6 +60,7 @@ var data = [
     "poster": "https://y.gtimg.cn/music/photo_new/T002R800x800M000004C9Kg7275J7H.jpg?max_age=2592000",
     "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M00000067r4p0wBDDN.jpg?max_age=2592000",
     "src":"https://isure.stream.qqmusic.qq.com/C400004Fimy419PpsA.m4a?guid=1851725062&vkey=7051E866601146CF177E5E60D1BC9DFC5C58106546E8DD3CA5CB2C1A1B9D46E775F761A8A8B2802423303FFCA92301CE862F590654F9E6FE&uin=1758&fromtag=66",
+    "tag":{SQ:"SQ",only:"独家"},
     "similar": [
       {
         "name": "一步之遥",
@@ -85,6 +88,7 @@ var data = [
     "poster": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003Lr7ct0vUSj3.jpg?max_age=2592000",
     "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M0000014X2tu05PYbH.jpg?max_age=2592000",
     "src": "https://isure.stream.qqmusic.qq.com/C400000pe8GD0He2Fe.m4a?guid=1851725062&vkey=E6946DDE6EB1171F8ED0AA39F58FCB4B5E56023D2318449A355B90B50E46E537F9BC950239008967566915A27209B683EA15047921D45E07&uin=1758&fromtag=66",
+    "tag":{vip:"VIP",SQ:"SQ",only:"独家"},
     "similar": [
       {
         "name": "夏天的风",
@@ -111,6 +115,7 @@ var data = [
     "poster": "https://y.gtimg.cn/music/photo_new/T002R800x800M000000EI9tu27e5iy.jpg?max_age=2592000",
     "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M000004dr7ZS36C2B1.jpg?max_age=2592000",
     "src": "https://isure.stream.qqmusic.qq.com/C400000S7TGL43hhBO.m4a?guid=1851725062&vkey=57931682138D580ADB2A570A3AF5F529BC5A8EA07929F9F4A6AFA7CD986C05A619257EEE35DA63AB352B12E0E6290F163FFFE23E90C8C717&uin=1758&fromtag=66",
+    "tag":{SQ:"SQ",only:"独家"},
     "similar": [
       {
         "name": "世界这么大还是遇见你",
@@ -129,6 +134,87 @@ var data = [
       }
     ]
   },
+  {
+    "id": "1464369558",
+    "name": "尘海",
+    "singer": "毛不易",
+    "album": "《三体》广播剧主题曲",
+    "poster": "https://y.gtimg.cn/music/photo_new/T002R150x150M000002SUh8j3kfkhF.jpg?max_age=25920000",
+    "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M000001BHDR33FZVZ0.jpg?max_age=2592000",
+    "src": "https://ws.stream.qqmusic.qq.com/C400002HL53m21sE1b.m4a?guid=1851725062&vkey=2F2EEA932F65633CA83F9353A56BD097C6F6301283105C31799231CBDFE1D5E4CD3167A6F06EA187E91A6DC4FEA101A29C525F59D716187A&uin=1758&fromtag=66",
+    "tag":{SQ:"SQ"},
+    "similar": [
+      {
+        "name": "世界这么大还是遇见你",
+        "singer": "程响",
+        "poster": "https://y.gtimg.cn/music/photo_new/T002R300x300M000003Ls5Jo4EFBIH_2.jpg?max_age=2592000"
+      },
+      {
+        "name": "年少有为",
+        "singer": "李荣浩",
+        "poster": "https://y.gtimg.cn/music/photo_new/T002R300x300M000004QnEHc3zjC7J_1.jpg?max_age=2592000"
+      },
+      {
+        "name": "你的答案",
+        "singer": "阿冗",
+        "poster": "https://y.gtimg.cn/music/photo_new/T002R300x300M000001ag9vZ3zT8OM_1.jpg?max_age=2592000"
+      }
+    ]
+  },
+  {
+    "id": "92755320",
+    "name": "梦寐之地",
+    "singer": "鹿晗",
+    "album": "《穿越火线》主题曲",
+    "poster": "https://y.gtimg.cn/music/photo_new/T002R150x150M000003lIcYS2biX9G.jpg?max_age=2592000",
+    "src": "https://ws.stream.qqmusic.qq.com/C400002S3bvD3dHLkI.m4a?guid=1851725062&vkey=16D4C66A78B415A0DF3515F5905372B93A516117BAF24839EB871E6C9B20A27476931FBF5152B5A6853DA8FD84DB18F6BF3CCB2D88DA8EEC&uin=1758&fromtag=66",
+    "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M000001SqkF53OEhdO.jpg?max_age=2592000",
+    "tag":{SQ:"SQ"},
+    "similar": [
+      {
+        "name": "世界这么大还是遇见你",
+        "singer": "程响",
+        "poster": "https://y.gtimg.cn/music/photo_new/T002R300x300M000003Ls5Jo4EFBIH_2.jpg?max_age=2592000"
+      },
+      {
+        "name": "年少有为",
+        "singer": "李荣浩",
+        "poster": "https://y.gtimg.cn/music/photo_new/T002R300x300M000004QnEHc3zjC7J_1.jpg?max_age=2592000"
+      },
+      {
+        "name": "你的答案",
+        "singer": "阿冗",
+        "poster": "https://y.gtimg.cn/music/photo_new/T002R300x300M000001ag9vZ3zT8OM_1.jpg?max_age=2592000"
+      }
+    ]
+  },
+  {
+    "id": "1462923102",
+    "name": "午夜伤心电台",
+    "singer": "艾热/派克特",
+    "album": "说唱听我的 第六期",
+    "poster": "https://y.gtimg.cn/music/photo_new/T002R150x150M000004cYb4i46RuNP.jpg?max_age=2592000",
+    "src": "https://ws.stream.qqmusic.qq.com/C400002FCIqe0DgSgk.m4a?guid=1851725062&vkey=8B5F727D93C9C898E2D1F6A0A2354C19AA1ABB99C43E6AFF7B8AFDDCEE5BE00CC86EDF4208DAAABCE8DDB38CAD9EDB142471D207B41C0503&uin=1758&fromtag=66",
+    "singerImg": "https://y.gtimg.cn/music/photo_new/T001R300x300M000002aAQMU1ukNTH.jpg?max_age=2592000",
+    "tag":{SQ:"SQ", vip:"VIP", only: "独家"},
+    "similar": [
+      {
+        "name": "世界这么大还是遇见你",
+        "singer": "程响",
+        "poster": "https://y.gtimg.cn/music/photo_new/T002R300x300M000003Ls5Jo4EFBIH_2.jpg?max_age=2592000"
+      },
+      {
+        "name": "年少有为",
+        "singer": "李荣浩",
+        "poster": "https://y.gtimg.cn/music/photo_new/T002R300x300M000004QnEHc3zjC7J_1.jpg?max_age=2592000"
+      },
+      {
+        "name": "你的答案",
+        "singer": "阿冗",
+        "poster": "https://y.gtimg.cn/music/photo_new/T002R300x300M000001ag9vZ3zT8OM_1.jpg?max_age=2592000"
+      }
+    ]
+  }
 ]
 
 module.exports = {

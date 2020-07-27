@@ -1,12 +1,12 @@
 <!--pages/music-player/music-player.wxml-->
 <view class="player">
-  <view class="song">{{song.name}}</view>
-  <view class="singer">{{song.singer}}</view>
-  <image class="poster" src="{{song.poster}}">
+  <view class="song">{{data.name}}</view>
+  <view class="singer">{{data.singer}}</view>
+  <image class="poster" src="{{data.poster}}">
     <image class="play-control" src="{{src}}" bindtap="playOrPause"/>
   </image>
   <!-- audio -->
-  <audio src="{{song.src}}" 
+  <audio src="{{data.src}}" 
  action="{{action}}" bindtimeupdate="play" loop></audio>
   <!-- lyric -->
   <view class="lyricBox">
@@ -23,7 +23,7 @@
   <button class="share">分享给微信好友</button>
 </view>
 <title title="猜你喜欢听" color="white"/>
-<block wx:for="{{song.similar}}" wx:key="index">
+<block wx:for="{{data.similar}}" wx:key="index">
   <song-rec src="{{item.poster}}" name="{{item.name}}" singer="{{item.singer}}" color="white"/>
 </block>
 <title title="大家都在听" color="white"/>
@@ -33,8 +33,8 @@
   </block>
 </block>
 <title title="歌手与专辑" color="white"/>
-<singer singer="歌手  {{song.singer}}" src="{{song.singerImg}}"/>
-<singer album="专辑  {{song.album}}" src="{{song.poster}}"/>
+<singer singer="歌手  {{data.singer}}" src="{{data.singerImg}}"/>
+<singer album="专辑  {{data.album}}" src="{{data.poster}}"/>
 <title title="精彩评论" color="white"/>
 <comment/>
 <view class="more-comment">查看更多热门评论></view>

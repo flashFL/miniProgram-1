@@ -2,10 +2,10 @@
 <!-- search -->
 <view bind:tap="toSearchPage" class="search">搜索</view>
 <!-- more -->
-<title title="歌曲推荐" more="更多 >" bind:jump="jumpToList" data-list="{{topHit}}" data-title="热歌榜"/>
+<title title="歌曲推荐" more="更多 >" bind:jump="jumpToList" data-list="{{songs}}" data-title="热歌榜"/>
 <!-- music-list -->
-<block wx:for="{{songs}}" wx:key="index">
-  <song-rec src="{{item.poster}}" name="{{item.name}}" singer="{{item.singer}}" dot="·" album="{{item.album}}"bindtap="songDetail" data-index="{{index}}" data-id="{{item.id}}"/>
+<block wx:for="{{songs}}" wx:key="index" wx:if="{{index < 5}}">
+  <song-rec src="{{item.poster}}" name="{{item.name}}" singer="{{item.singer}}" dot="·" album="{{item.album}}"bindtap="jumpToPlayer" data-data="{{item}}"/>
 </block>
 <title title="热门歌单" more="更多 >"/>
 <hit-songs hit="{{hit}}"/>
@@ -16,7 +16,7 @@
 <!-- 榜单 -->
 <title title="巅峰榜"/>
 <top title="飙升榜" times="1940万" top="{{topUp}}" bind:jump="jumpToList" data-list="{{topUp}}" data-title="飙升榜"/>
-<top title="热歌榜" times="1950万" top="{{topHit}}" bind:jump="jumpToHit" bind:jump="jumpToList" data-list="{{topHit}}" data-title="热歌榜"/>
+<top title="热歌榜" times="1950万" top="{{songs}}" bind:jump="jumpToList" data-list="{{songs}}" data-title="热歌榜"/>
 <top title="新歌榜" times="81.4万" top="{{topNew}}" bind:jump="jumpToList" data-list="{{topNew}}" data-title="新歌榜"/>
 
 

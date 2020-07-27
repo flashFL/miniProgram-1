@@ -102,8 +102,8 @@
 				},
 				{
 					"id": 5,
-					"name": "music-hit",
-					"pathName": "pages/music-hit/music-hit",
+					"name": "music-list",
+					"pathName": "pages/music-list/music-list",
 					"query": "",
 					"scene": null
 				}

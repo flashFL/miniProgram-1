@@ -9,7 +9,7 @@
     </block>
   </view>
   <view class="top-right">
-    <image src="{{top[0].src}}" class="top-img">
+    <image src="{{top[0].poster}}" class="top-img">
       <view class="top-times">
         <image src="/assets/play.png" class="top-play"/>
         {{times}}

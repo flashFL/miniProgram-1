@@ -5,7 +5,6 @@ const app = getApp()
 // console.log(app.globalData.age)
 var hit = require('../../data/hit-songs')
 var official = require('../../data/official-songs')
-var topHit = require('../../data/top-hit')
 var topUp = require('../../data/top-up')
 var topNew = require('../../data/top-new')
 // 注册页面示例
@@ -17,7 +16,6 @@ Page({
   data: {
     hit: hit.dataList,
     official: official.dataList,
-    topHit: topHit.dataList,
     topUp: topUp.dataList,
     topNew: topNew.dataList,
     songs: app.globalData.songs,
@@ -99,11 +97,14 @@ Page({
       url: '/pages/search/search',
     })
   },
-  songDetail(event){
-    var index = event.currentTarget.dataset.index
-    var id = event.currentTarget.dataset.id
+  jumpToPlayer(event){
+    var data = event.currentTarget.dataset.data;
     wx.navigateTo({
-      url: '/pages/music-player/music-player?index=' + index + '&id=' + id,
+      url: '/pages/music-player/music-player',
+      success: function(res) {
+        // 通过eventChannel向被打开页面传送数据
+        res.eventChannel.emit('acceptDataFromOpenerPage', { data: data })
+      }
     })
   },
   jumpToList(event){

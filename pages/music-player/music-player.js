@@ -1,34 +1,37 @@
 // pages/music-player/music-player.js
 var hit = require('../../data/hit-songs')
-var songs = getApp().globalData.songs
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    data:{},
     action: {
       method: "play"
     },
     status: "play",
-    song: [],
     hit: hit.dataList,
     src: "/assets/playMusic.png",
     times: [],
     lyrics: [],
     currentIndex: 0,
-    updistance: 0
+    updistance: 0,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      song: songs[options.index]
-    }),
+    const eventChannel = this.getOpenerEventChannel()
+    // 监听acceptDataFromOpenerPage事件，获取上一页面通过eventChannel传送到当前页面的数据
+    eventChannel.on('acceptDataFromOpenerPage', (data) => {
+      this.setData({
+        data: data.data
+      })
+    })
     wx.request({
-      url: 'http://music.163.com/api/song/media?id=' + options.id,
+      url: 'http://music.163.com/api/song/media?id=' + this.data.data.id,
       success: (res) => {
         var lyric = res.data.lyric;
         this.parseLyric(lyric);

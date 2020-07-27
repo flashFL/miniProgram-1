@@ -1,4 +1,4 @@
-<view class="rec-content" bindtap="more">
+<view class="rec-content">
   <view class="song-list" style="color:{{color}}">
     <image src="{{src}}" class="song-img"/>
     <view class="song-msg">
