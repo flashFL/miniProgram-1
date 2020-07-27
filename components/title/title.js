@@ -6,7 +6,12 @@ Component({
   properties: {
     title: String,
     more: String,
-    color: String
+    color: String,
+  },
+  methods: {
+    toMore(){
+      this.triggerEvent("jump")
+    }
   }
   
 })

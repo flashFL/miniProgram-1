@@ -6,5 +6,10 @@ Component({
   },
   pageLifetimes: {
     
+  },
+  methods: {
+    jump(){
+      this.triggerEvent("jump")
+    }
   }
 })

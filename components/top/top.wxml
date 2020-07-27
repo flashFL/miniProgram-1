@@ -1,4 +1,4 @@
-<view class="top">
+<view class="top" bindtap="jump">
   <view class="top-left">
     <view class="title">{{title}}</view>
     <block wx:for="{{top}}" wx:key="index">

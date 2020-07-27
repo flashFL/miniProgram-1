@@ -1,0 +1,4 @@
+<title title="{{title}}"/>
+<block wx:for="{{list}}" wx:key="index">
+  <musicList list="{{item}}" number="{{index + 1}}"/>
+</block>

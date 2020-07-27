@@ -1,0 +1,15 @@
+<!--components/musicList/musicList.wxml-->
+<view class="container">
+  <view class="left">{{number}}</view>
+  <view class="right">
+    <view class="right-top">{{list.name}}</view>
+    <view class="right-bottom">
+      <view class="tag">
+        <view wx:if="{{list.tag.vip}}" class="vip">{{list.tag.vip}}</view>
+        <view wx:if="{{list.tag.SQ}}" class="SQ">{{list.tag.SQ}}</view>
+        <view wx:if="{{list.tag.only}}" class="only">{{list.tag.only}}</view>
+      </view>
+      <view class="singer">{{list.singer}} · {{list.album}}</view>
+    </view>
+  </view>
+</view>

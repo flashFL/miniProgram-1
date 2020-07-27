@@ -106,4 +106,18 @@ Page({
       url: '/pages/music-player/music-player?index=' + index + '&id=' + id,
     })
   },
+  jumpToList(event){
+    const hit = event.currentTarget.dataset.list;
+    const title = event.currentTarget.dataset.title;
+    wx.navigateTo({
+      url: '/pages/music-list/music-list',
+      success: function(res) {
+        // 通过eventChannel向被打开页面传送数据
+        res.eventChannel.emit('acceptDataFromOpenerPage', { data: {
+          hit,
+          title
+        } })
+      }
+    })
+  }
 })

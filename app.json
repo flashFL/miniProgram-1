@@ -5,6 +5,7 @@
     "pages/search/search",
     "pages/more/more",
     "pages/music-player/music-player",
+    "pages/music-list/music-list",
     "pages/test/test"
   ],
   "window": {

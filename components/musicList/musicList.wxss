@@ -1,0 +1,55 @@
+/* components/musicList/musicList.wxss */
+.container {
+  display: flex;
+  align-items: center;
+  margin: 40rpx 40rpx;
+}
+.left {
+  margin-right: 40rpx;
+  font-size: 30rpx;
+}
+.right-top{
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+.right-bottom {
+  font-size: 18rpx;
+  line-height: 20rpx;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.tag {
+  display: flex;
+}
+.tag-item {
+  margin-right: 10rpx;
+  color: #31c27c;
+  padding: 4rpx;
+  border: 2rpx solid #31c27c;
+  border-radius: 5rpx;
+}
+.SQ {
+  margin-right: 10rpx;
+  color: orange;
+  padding: 4rpx;
+  border: 2rpx solid orange;
+  border-radius: 5rpx;
+}
+.only{
+  margin-right: 10rpx;
+  color: #31c27c;
+  padding: 4rpx;
+  border: 2rpx solid #31c27c;
+  border-radius: 5rpx;
+}
+.vip{
+  margin-right: 10rpx;
+  color: #31c27c;
+  padding: 4rpx;
+  border: 2rpx solid #31c27c;
+  border-radius: 5rpx;
+}
+.singer {
+  font-size: 24rpx;
+  opacity: .5;
+}
